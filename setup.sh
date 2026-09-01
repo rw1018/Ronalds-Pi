@@ -39,13 +39,7 @@ else
 fi
 cp -R "$REPO_DIR/pi/skills/." "$AGENT_DIR/skills/"
 
-# 4. Skill dependencies
-if [ -f "$AGENT_DIR/skills/brave-search/package.json" ]; then
-  echo "Installing brave-search skill deps..."
-  (cd "$AGENT_DIR/skills/brave-search" && npm install --no-audit --no-fund)
-fi
-
 echo ""
 echo "Done. Next pi start pulls npm extensions from settings.json automatically."
-echo "  - BRAVE_API_KEY must be set in env for the brave-search skill."
-echo "  - Custom model providers need Tailscale up (tailnet IPs in models.json)."
+echo "  - BRAVE_API_KEY must be set in env for the pi-brave-search extension."
+echo "  - Custom model providers need Tailscale up (private rws-models repo)."

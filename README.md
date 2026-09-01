@@ -8,7 +8,7 @@ My [pi](https://github.com/badlogic/pi-coding-agent) coding agent setup: extensi
 |---|---|---|
 | `pi/settings.json` | `~/.pi/agent/settings.json` | Extension package list, theme, thinking budgets, default model |
 | `pi/models.example.json` | `~/.pi/agent/models.json` | Template only — real providers live in private repo **rws-models** |
-| `pi/skills/` | `~/.pi/agent/skills/` | `brave-search` (web search), `macos-harness` (native app control) |
+| `pi/skills/` | `~/.pi/agent/skills/` | `macos-harness` (native app control) |
 
 Extensions are declared in `settings.json` as npm/git packages — pi installs them automatically on first start (no vendoring).
 
@@ -27,7 +27,7 @@ cd Ronalds-Pi
 - [pi](https://pi.dev) coding agent
 - **Tailscale** up — model providers point at tailnet machines
 - **`rws-models`** (private repo) for real model providers: `git clone git@github.com:rw1018/rws-models.git ~/rws-models`. Without it, `setup.sh` installs the example file instead.
-- `BRAVE_API_KEY` env var for the `brave-search` skill
+- `BRAVE_API_KEY` env var for the `pi-brave-search` extension (optional: `BRAVE_API_KEY_PAID`, `BRAVE_API_KEY_AI_GROUNDING`)
 - Node.js (skill deps)
 
 ## What's in the stack
@@ -38,6 +38,7 @@ Extensions (from `settings.json`):
 - `pi-token-speed` — token speed meter
 - `pi-peon-ping`
 - `pi-cc-extensions`
+- `pi-brave-search` — Brave web search + AI grounding (`BRAVE_API_KEY` env var)
 - `pi-agent-browser` — browser automation skill
 - `@tintinweb/pi-subagents` — parallel subagents, background tasks, worktree isolation
 - `@tintinweb/pi-tasks` — task management

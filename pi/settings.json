@@ -17,15 +17,16 @@
     "npm:pi-cc-extensions",
     "npm:pi-caveman",
     "npm:@tintinweb/pi-subagents",
-    "npm:@tintinweb/pi-tasks"
+    "npm:@tintinweb/pi-tasks",
+    "npm:pi-brave-search"
   ],
-  "defaultProvider": "rws-rotterdam-worker-1",
-  "defaultModel": "unsloth/Qwen3.8-27B-NVFP4",
+  "defaultProvider": "rws-mac-studio",
+  "defaultModel": "glm53-flash",
   "tuiMode": "regular",
   "thinkingBudgets": {
     "low": 4096,
     "medium": 10240,
     "xhigh": 32768
   },
-  "defaultThinkingLevel": "xhigh"
+  "defaultThinkingLevel": "minimal"
 }
