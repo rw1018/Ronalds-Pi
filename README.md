@@ -7,7 +7,7 @@ My [pi](https://github.com/badlogic/pi-coding-agent) coding agent setup: extensi
 | Path | Installs to | What |
 |---|---|---|
 | `pi/settings.json` | `~/.pi/agent/settings.json` | Extension package list, theme, thinking budgets, default model |
-| `pi/models.json` | `~/.pi/agent/models.json` | 4 local Tailscale model providers (Qwen GGUF/MLX, Mac Studio) |
+| `pi/models.example.json` | `~/.pi/agent/models.json` | Template only — real providers live in private repo **rws-models** |
 | `pi/skills/` | `~/.pi/agent/skills/` | `brave-search` (web search), `macos-harness` (native app control) |
 
 Extensions are declared in `settings.json` as npm/git packages — pi installs them automatically on first start (no vendoring).
@@ -25,7 +25,8 @@ cd Ronalds-Pi
 ## Requirements
 
 - [pi](https://pi.dev) coding agent
-- **Tailscale** up — model providers in `models.json` point at tailnet machines
+- **Tailscale** up — model providers point at tailnet machines
+- **`rws-models`** (private repo) for real model providers: `git clone git@github.com:rw1018/rws-models.git ~/rws-models`. Without it, `setup.sh` installs the example file instead.
 - `BRAVE_API_KEY` env var for the `brave-search` skill
 - Node.js (skill deps)
 

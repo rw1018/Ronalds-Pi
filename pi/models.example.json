@@ -1,0 +1,17 @@
+{
+  "providers": {
+    "example-tailnet-machine": {
+      "baseUrl": "http://100.x.y.z:8080/v1",
+      "api": "openai-completions",
+      "apiKey": "tailscale",
+      "models": [
+        {
+          "id": "your-model-id",
+          "name": "Your Model",
+          "contextWindow": 262144,
+          "reasoning": true
+        }
+      ]
+    }
+  }
+}
