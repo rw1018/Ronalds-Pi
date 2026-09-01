@@ -1,0 +1,30 @@
+{
+  "lastChangelogVersion": "0.84.1",
+  "theme": "dark",
+  "packages": [
+    {
+      "source": "git:github.com/tmustier/pi-extensions",
+      "extensions": [
+        "ralph-wiggum/index.ts"
+      ],
+      "skills": [
+        "ralph-wiggum/SKILL.md"
+      ]
+    },
+    "npm:pi-agent-browser",
+    "npm:@tmustier/pi-clean-slides",
+    "npm:pi-token-speed",
+    "npm:pi-peon-ping",
+    "npm:pi-cc-extensions",
+    "npm:pi-caveman"
+  ],
+  "defaultProvider": "rws-rotterdam-worker-1",
+  "defaultModel": "unsloth/Qwen3.8-27B-NVFP4",
+  "tuiMode": "regular",
+  "thinkingBudgets": {
+    "low": 4096,
+    "medium": 10240,
+    "xhigh": 32768
+  },
+  "defaultThinkingLevel": "xhigh"
+}

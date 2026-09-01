@@ -1,0 +1,69 @@
+{
+  "providers": {
+   "rws-rotterdam-worker-1": {
+     "baseUrl": "http://100.100.162.98:8080/v1",
+     "api": "openai-completions",
+     "apiKey": "tailscale",
+     "models": [
+       {
+         "id": "unsloth/Qwen3.8-27B-NVFP4",
+         "name": "Qwen 3.8 27B NVFP4",
+         "contextWindow": 262144,
+         "reasoning": true,
+         "thinkingLevelMap": {
+           "off": null,
+           "minimal": null,
+           "low": "low",
+           "medium": "medium",
+           "high": null,
+           "xhigh": "xhigh",
+           "max": null
+         }
+       }
+     ]
+   },
+   "rws-manila-worker-1": {
+    "baseUrl": "http://100.90.88.49:5555/v1",
+      "api": "openai-completions",
+      "apiKey": "tailscale",
+      "models": [
+        {
+          "id": "qwen-3.6-27b",
+          "name": "Qwen 3.6 27B",
+          "contextWindow": 131072
+        }
+      ]
+    },
+    "rws-mac-studio-mlx": {
+      "baseUrl": "http://100.97.82.90:8082/v1",
+      "api": "openai-completions",
+      "apiKey": "tailscale",
+      "models": [
+        {
+          "id": "/Users/ronald/models/deepseek-v4-flash/MXFP4-MLX-4bit",
+          "name": "DeepSeek V4 (Mac Studio MLX 4bit)",
+          "contextWindow": 256000,
+          "maxTokens": 32000
+        }
+      ]
+    },
+    "rws-mac-studio-qwen": {
+      "baseUrl": "http://100.97.82.90:8083/v1",
+      "api": "openai-completions",
+      "apiKey": "tailscale",
+      "models": [
+        {
+          "id": "/Users/ronald/.cache/huggingface/hub/models--JonathanColetti--Qwen3.8-27B-Uncensored-GGUF/snapshots/dee0a3164d9e11bbbebf5b63f52ba99443d14fc3/Qwen3.8-27B-Uncensored-noMTP-Q4_K_M.gguf",
+          "name": "Qwen 3.8 27B (Mac Studio GGUF)",
+          "contextWindow": 256000,
+          "maxTokens": 32000,
+          "reasoning": true,
+          "compat": {
+            "thinkingFormat": "qwen-chat-template"
+          }
+        }
+      ]
+    }
+  }
+}
+
