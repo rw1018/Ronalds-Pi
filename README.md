@@ -39,7 +39,8 @@ Extensions (from `settings.json`):
 - `pi-peon-ping`
 - `pi-cc-extensions`
 - `pi-agent-browser` — browser automation skill
-- `@tmustier/pi-clean-slides` — PowerPoint inspection/editing
+- `@tintinweb/pi-subagents` — parallel subagents, background tasks, worktree isolation
+- `@tintinweb/pi-tasks` — task management
 - `git:github.com/tmustier/pi-extensions` → `ralph-wiggum` (extension + skill)
 
 Local model providers:

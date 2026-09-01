@@ -12,11 +12,12 @@
       ]
     },
     "npm:pi-agent-browser",
-    "npm:@tmustier/pi-clean-slides",
     "npm:pi-token-speed",
     "npm:pi-peon-ping",
     "npm:pi-cc-extensions",
-    "npm:pi-caveman"
+    "npm:pi-caveman",
+    "npm:@tintinweb/pi-subagents",
+    "npm:@tintinweb/pi-tasks"
   ],
   "defaultProvider": "rws-rotterdam-worker-1",
   "defaultModel": "unsloth/Qwen3.8-27B-NVFP4",
